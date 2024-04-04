@@ -139,12 +139,14 @@
 }
 
 /* MyJob */
-.jobs-container{
+.jobs-container {
   margin: 10px 40px;
+
   span {
     color: #2e87da;
   }
 }
+
 .job {
   display: flex;
   align-items: center;
