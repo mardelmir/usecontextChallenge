@@ -1,17 +1,18 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Button from './Button'
 
 function Header() {
     return (
-        <header>
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/profile">Profile</Link>
-                <Link to="/myjob">My Job</Link>
-            </nav>
-            <Outlet />
-            <Button />
-        </header>
+        <>
+            <header className='header'>
+                <nav className='nav'>
+                    <Link to="/">Home</Link>
+                    <Link to="/profile">Profile</Link>
+                    <Link to="/myjob">My Job</Link>
+                </nav>
+                <Button />
+            </header>
+        </>
     )
 }
 

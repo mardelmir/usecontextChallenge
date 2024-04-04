@@ -1,3 +1,36 @@
 #root {
   text-align: center;
 }
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+}
+
+.header,
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.lightBtn {
+  background-image: url('./moon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.darkBtn {
+  background-image: url('./sun.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: invert();
+}
+
+.lightBtn:hover,
+.darkBtn:hover {
+  background-color: #a5c1ee;
+  box-shadow: 0px 0px 5px 3px #a5c1ee;
+}

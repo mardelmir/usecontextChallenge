@@ -1,15 +1,18 @@
 import './App.css';
-import { ThemeProvider } from './themes/ThemeContext';
-import Button from './components/Button';
+import Header from './components/Header';
+import { ThemeProvider, useTheme } from './themes/ThemeContext';
+import { Outlet } from 'react-router-dom';
 
-const App = () => {
+function App() {
+  const { theme } = useTheme()
   return (
     <>
-      <ThemeProvider>
-        <div className='App'>
-          <Button />
+      <div className={`App ${theme}`}>
+        <Header />
+        <div className='content'>
+          <Outlet />
         </div>
-      </ThemeProvider>
+      </div>
     </>
   );
 };
