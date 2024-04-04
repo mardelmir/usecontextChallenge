@@ -8,7 +8,7 @@ function Profile() {
             <div className='profile'>
                 <div className='profile_pic'></div>
                 <div className='info'>
-                    <ul className={`${theme}Ul`}>
+                    <ul className={`${theme}A`}>
                         <li><span>Nombre:</span> mardelmir</li>
                         <li><span>Hobbies:</span> puzzles, escape rooms, acuarela</li>
                         <li><span>GitHub:</span><a href='https://github.com/mardelmir' target='_blank'> https://github.com/mardelmir</a></li>

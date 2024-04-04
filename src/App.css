@@ -105,10 +105,6 @@
   }
 }
 
-span {
-  font-weight: 500;
-}
-
 /* Home */
 .features {
   margin-top: 50px;
@@ -121,7 +117,6 @@ span {
 }
 
 /* Profile */
-
 .profile {
   display: flex;
   justify-content: center;
@@ -133,20 +128,6 @@ span {
   span {
     color: #2eb2da;
   }
-
-  a {
-    font-size: initial;
-    font-weight: 400;
-    color: black;
-  }
-
-  a:hover {
-    color: #396ae9
-  }
-}
-
-.darkUl  a {
-  color: #ebebeb;
 }
 
 .profile_pic {
@@ -158,3 +139,37 @@ span {
 }
 
 /* MyJob */
+.jobs-container{
+  margin: 10px 40px;
+  span {
+    color: #2e87da;
+  }
+}
+.job {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 30px 0px;
+}
+
+.job img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.profile a,
+.job a {
+  font-size: initial;
+  font-weight: 400;
+  color: black;
+}
+
+.profile a:hover,
+.job a:hover {
+  color: #396ae9
+}
+
+.darkA a {
+  color: #ebebeb;
+}
