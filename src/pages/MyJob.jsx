@@ -17,7 +17,7 @@ function MyJob() {
                             <ul>
                                 <li><span>Nombre</span>: {name}</li>
                                 <li><span>Descripción</span>: {description}</li>
-                                <li className={`${theme}A`}><span>Link</span>: <a href={url}>{url}</a></li>
+                                <li className={`${theme}A`}><span>Link</span>: <a href={url} target='_blank'>{url}</a></li>
                             </ul>
                         </div>)
                 })}
