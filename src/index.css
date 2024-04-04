@@ -54,6 +54,12 @@ button {
   transition: box-shadow .1s;
 }
 
+ul {
+  text-align: start;
+  list-style: none;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -76,7 +82,7 @@ button {
 
 .dark {
   background-color: #242424;
-  color: #d8d8d8;
+  color: #ebebeb;
 }
 
 .content {

@@ -8,9 +8,9 @@ function Header() {
         <>
             <header className='header'>
                 <nav className='nav'>
-                    <Link to="/">Home</Link>
-                    <Link to="/profile">Profile</Link>
-                    <Link to="/myjob">My Job</Link>
+                    <Link to="/">Inicio</Link>
+                    <Link to="/profile">Perfil</Link>
+                    <Link to="/myjob">Mis trabajos</Link>
                 </nav>
                 <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                     viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">

@@ -104,3 +104,57 @@
 
   }
 }
+
+span {
+  font-weight: 500;
+}
+
+/* Home */
+.features {
+  margin-top: 50px;
+}
+
+.list {
+  span {
+    color: #2498e1;
+  }
+}
+
+/* Profile */
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0px;
+  width: 100vw;
+
+  span {
+    color: #2eb2da;
+  }
+
+  a {
+    font-size: initial;
+    font-weight: 400;
+    color: black;
+  }
+
+  a:hover {
+    color: #396ae9
+  }
+}
+
+.darkUl  a {
+  color: #ebebeb;
+}
+
+.profile_pic {
+  padding: 100px;
+  border-radius: 50%;
+  background-image: url(./assets/profile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* MyJob */
