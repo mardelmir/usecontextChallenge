@@ -2,28 +2,37 @@
   text-align: center;
 }
 
-.header {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 20px;
-}
-
 .header,
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+}
+
+.header {
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 20px;
+  background: linear-gradient(150deg, rgb(74, 197, 221) 0%, rgb(70, 34, 198) 100%);
+}
+
+.nav {
+  width: 70%;
+  justify-content: space-around;
+  margin: 20px 0px;
 }
 
 .lightBtn {
-  background-image: url('./moon.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url('./src/assets/moon.svg');
 }
 
 .darkBtn {
-  background-image: url('./sun.svg');
+  background-image: url('./src/assets/sun.svg');
+}
+
+.lightBtn,
+.darkBtn {
   background-size: contain;
   background-repeat: no-repeat;
   filter: invert();
@@ -31,6 +40,67 @@
 
 .lightBtn:hover,
 .darkBtn:hover {
-  background-color: #a5c1ee;
-  box-shadow: 0px 0px 5px 3px #a5c1ee;
+  background-color: #ae4a10b8;
+  box-shadow: 0px 0px 5px 3px #ae4a10b8;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 5vh;
+}
+
+.parallax>use {
+  animation: waveMotion 25s cubic-bezier(.65, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  fill: rgba(255, 255, 255, 0.7);
+  animation-delay: -1s;
+  animation-duration: 8s;
+}
+
+.parallax>use:nth-child(2) {
+  fill: rgba(255, 255, 255, 0.5);
+  animation-delay: -3s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(3) {
+  fill: rgba(255, 255, 255, 0.3);
+  animation-delay: -4s;
+  animation-duration: 17s;
+}
+
+.parallax>use:nth-child(4) {
+  fill: white;
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+.darkParallax>use:nth-child(1) {
+  fill: rgb(36, 36, 36, 0.7);
+}
+
+.darkParallax>use:nth-child(2) {
+  fill: rgb(36, 36, 36, 0.5);
+}
+
+.darkParallax>use:nth-child(3) {
+  fill: rgb(36, 36, 36, 0.3);
+}
+
+.darkParallax>use:nth-child(4) {
+  fill: rgb(36, 36, 36);
+}
+
+@keyframes waveMotion {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+
+  }
 }

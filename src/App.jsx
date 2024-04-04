@@ -9,7 +9,7 @@ function App() {
     <>
       <div className={`App ${theme}`}>
         <Header />
-        <div className='content'>
+        <div>
           <Outlet />
         </div>
       </div>
