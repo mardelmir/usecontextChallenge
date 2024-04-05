@@ -23,6 +23,15 @@
   margin: 20px 0px;
 }
 
+/* Theme button */
+.btn-container {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+  backdrop-filter: blur(20px);
+}
+
 .lightBtn {
   background-image: url('./src/assets/moon.svg');
 }
@@ -44,6 +53,7 @@
   box-shadow: 0px 0px 5px 3px #ae4a10b8;
 }
 
+/* Wave effect */
 .waves {
   position: relative;
   width: 100%;
@@ -55,25 +65,21 @@
 }
 
 .parallax>use:nth-child(1) {
-  fill: rgba(255, 255, 255, 0.7);
   animation-delay: -1s;
   animation-duration: 8s;
 }
 
 .parallax>use:nth-child(2) {
-  fill: rgba(255, 255, 255, 0.5);
   animation-delay: -3s;
   animation-duration: 13s;
 }
 
 .parallax>use:nth-child(3) {
-  fill: rgba(255, 255, 255, 0.3);
   animation-delay: -4s;
   animation-duration: 17s;
 }
 
 .parallax>use:nth-child(4) {
-  fill: white;
   animation-delay: -5s;
   animation-duration: 20s;
 }
@@ -111,6 +117,8 @@
 }
 
 .list {
+  padding: 0px;
+
   span {
     color: #2498e1;
   }
@@ -121,7 +129,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   padding: 30px 0px;
   width: 100vw;
 
@@ -140,7 +148,8 @@
 
 /* MyJob */
 .jobs-container {
-  margin: 10px 40px;
+  width: 80vw;
+  padding-top: 5px;
 
   span {
     color: #2e87da;
@@ -150,14 +159,15 @@
 .job {
   display: flex;
   align-items: center;
-  gap: 10px;
-  width: fit-content;
+  gap: 50px;
   margin: 30px 0px;
+ width: fit-content;
 }
 
 .job img {
   width: 200px;
   border-radius: 8px;
+  border: .5px solid #92afc9
 }
 
 .profile a,
@@ -174,4 +184,31 @@
 
 .darkA a {
   color: #ebebeb;
+}
+
+@media (max-width: 660px) {
+  .features {
+    width: 80vw;
+  }
+
+  .profile {
+    flex-direction: column;
+    
+  }
+
+  .jobs-container {
+    display: contents;
+    place-content: center;
+  }
+
+  .job {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0px;
+  }
+
+  .job>ul {
+    width: 300px;
+  }
 }

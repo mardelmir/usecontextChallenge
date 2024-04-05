@@ -4,7 +4,9 @@ function Button() {
     const { theme, changeTheme } = useTheme()
     return (
         <>
-            <button onClick={changeTheme} className={`${theme}Btn`}></button>
+            <div className='btn-container'>
+                <button onClick={changeTheme} className={`${theme}Btn`}></button>
+            </div>
         </>
     )
 }

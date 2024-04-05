@@ -8,6 +8,7 @@ function Home() {
                 <ul className='list'>
                     <li><span>Dark Mode:</span> en la esquina superior derecha, se desplaza hacia abajo al hacer scroll.</li>
                     <li><span>Waves:</span> cabecera con efecto de olas (también para modo oscuro).</li>
+                    <li><span>Responsive:</span> para anchos menores de 660px.</li>
                     <li><span>Rutas:</span> con el método que aprendimos en clase la semana pasada.</li>
                 </ul>
             </div>
