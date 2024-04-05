@@ -12,3 +12,12 @@ function Button() {
 }
 
 export default Button
+
+// Corrección clase
+
+// const Button = () => {
+//     const { toggleTheme } = useTheme()
+//     return (
+//         <button onClick={toggleTheme}>Change theme</button>
+//     )
+// }

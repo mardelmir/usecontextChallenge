@@ -18,3 +18,11 @@ function App() {
 };
 
 export default App;
+
+// Corrección clase
+
+// function App() {
+// return(
+//   <RoutesApp />
+// )
+// }
